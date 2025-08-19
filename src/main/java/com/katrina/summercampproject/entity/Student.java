@@ -1,4 +1,4 @@
-package com.katrina.entity;
+package com.katrina.summercampproject.entity;
 
 import java.time.LocalDate;
 
