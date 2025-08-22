@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SummercampprojectApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(SummercampprojectApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(SummercampprojectApplication.class, args);
+    }
 }
