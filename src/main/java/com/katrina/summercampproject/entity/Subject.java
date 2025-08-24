@@ -8,7 +8,8 @@ public class Subject {
    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "subject_id")
+    private Integer id;
 
     private String name;
     private String category;
@@ -19,11 +20,11 @@ public class Subject {
         this.category = category;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

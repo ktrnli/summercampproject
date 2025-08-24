@@ -32,7 +32,7 @@ CREATE TABLE course (
 );
 
 CREATE TABLE student_course (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    `id` INT PRIMARY KEY AUTO_INCREMENT,
     student_id INT NOT NULL,
     course_id INT NOT NULL,
     CONSTRAINT fk_student

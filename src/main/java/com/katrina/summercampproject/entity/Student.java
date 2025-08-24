@@ -10,7 +10,8 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "student_id")
+    private Integer id;
 
     private String firstName;
     private String lastName;
@@ -29,11 +30,11 @@ public class Student {
         this.registrationDate = registrationDate;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

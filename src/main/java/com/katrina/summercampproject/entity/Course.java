@@ -11,7 +11,8 @@ public class Course {
    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "course_id")
+    private Integer id;
 
     private String day_of_week;
     private LocalTime start_time;
@@ -32,10 +33,10 @@ public class Course {
         this.start_date = start_date;
         this.end_date = end_date;
     }
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
     public String getDay_of_week() {
