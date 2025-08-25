@@ -12,10 +12,12 @@ Relies on a MySQL database to retrieve data using RESTful APIs.
 
 2. **Configure application.properties:**
 Use your db name, MySQL username and password in the following code:
-```spring.datasource.url=jdbc:mysql://localhost:3306/summercamp
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/summercamp
 spring.datasource.username=<your-username>
 spring.datasource.password=<your-password>
-spring.jpa.hibernate.ddl-auto=validate```
+spring.jpa.hibernate.ddl-auto=validate
+```
 
 3. **Run the application:**
 ```mvn spring-boot:run```
